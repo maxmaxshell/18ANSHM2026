@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keynote Speakers - ANSHM 2026</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {margin:0;padding:0;box-sizing:border-box;}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7e6a1;
+}
+
+/* Header */
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:rgba(0,0,0,0.75);
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+.logo {font-size:22px;font-weight:600;}
+.subtitle {font-size:12px;opacity:0.8;}
+nav a {
+    margin-left:20px;
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+    transition:0.3s;
+}
+nav a:hover {color:#ffd54f;}
+.menu-toggle {display:none;font-size:22px;cursor:pointer;}
+@media (max-width:768px){
+    nav {display:none;flex-direction:column;background:#000;position:absolute;top:60px;right:0;width:200px;}
+    nav a {padding:10px;display:block;}
+    nav.active {display:flex;}
+    .menu-toggle {display:block;}
+}
+
+/* Page content */
+.container{max-width:1100px;margin:auto;padding:60px 20px;}
+h1{text-align:center;margin-bottom:40px;font-size:36px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px;}
+
+/* Card style */
+.card {
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:transform 0.3s;
+    cursor:pointer;
+}
+.card:hover{transform:translateY(-8px);}
+.card img {width:100%;height:250px;object-fit:cover;}
+.card-content {padding:20px;}
+.card-content .name {font-weight:600;font-size:18px;margin-bottom:5px;}
+.card-content .title {font-size:14px;color:#555;margin-bottom:5px;}
+.card-content .affiliation {font-size:14px;color:#777;margin-bottom:10px;}
+.card-content .bio {font-size:13px;line-height:1.5;color:#333;}
+
+/* Footer */
+footer{background:#000;color:#fff;text-align:center;padding:30px;margin-top:40px;}
+footer a{color:#ffd54f;}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <div class="logo">ANSHM 2026 PERTH</div>
+        <div class="subtitle">Hosted by Curtin University</div>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="committees.html">Committees</a>
+        <a href="keynote.html">Keynote Speakers</a> 
+        <a href="registration.html">Registration</a>
+        <a href="docs/program.pdf" target="_blank">Program</a>
+        <a href="docs/sponsorship.pdf" target="_blank">Sponsorship</a>
+        <a href="venue.html">Venue</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+<h1>Keynote Speakers</h1>
+<div class="grid">
+    <div class="card">
+        <img src="images/speaker1.jpg" alt="Speaker 1">
+        <div class="card-content">
+            <div class="name">Dr. Alice Johnson</div>
+            <div class="title">Professor of Civil Engineering</div>
+            <div class="affiliation">University of Melbourne</div>
+            <div class="bio">Dr. Johnson specializes in smart materials and structural health monitoring for bridges and infrastructure systems.</div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/speaker2.jpg" alt="Speaker 2">
+        <div class="card-content">
+            <div class="name">Prof. Michael Lee</div>
+            <div class="title">Head of Structural Dynamics</div>
+            <div class="affiliation">Monash University</div>
+            <div class="bio">Prof. Lee's research focuses on vibration analysis and innovative sensing techniques for large-scale structures.</div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/speaker3.jpg" alt="Speaker 3">
+        <div class="card-content">
+            <div class="name">Dr. Sara Thompson</div>
+            <div class="title">Lead Researcher</div>
+            <div class="affiliation">University of Sydney</div>
+            <div class="bio">Dr. Thompson works on data-driven monitoring of bridges using AI and machine learning approaches.</div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/speaker4.jpg" alt="Speaker 4">
+        <div class="card-content">
+            <div class="name">Prof. David Wang</div>
+            <div class="title">Professor of Structural Health Monitoring</div>
+            <div class="affiliation">University of Queensland</div>
+            <div class="bio">Prof. Wang integrates sensor networks and smart algorithms to predict infrastructure performance and maintenance needs.</div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/speaker5.jpg" alt="Speaker 5">
+        <div class="card-content">
+            <div class="name">Dr. Emily Zhang</div>
+            <div class="title">Research Scientist</div>
+            <div class="affiliation">CSIRO</div>
+            <div class="bio">Dr. Zhang focuses on real-time structural monitoring and the development of innovative sensing devices.</div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/speaker6.jpg" alt="Speaker 6">
+        <div class="card-content">
+            <div class="name">Prof. John Roberts</div>
+            <div class="title">Director of Smart Infrastructure Lab</div>
+            <div class="affiliation">RMIT University</div>
+            <div class="bio">Prof. Roberts' research covers advanced monitoring techniques, digital twins, and predictive maintenance of civil structures.</div>
+        </div>
+    </div>
+</div>
+</div>
+
+<footer>
+<p>Contact: 02 4925 3780</p>
+<p>Email: <a href="mailto:Curtin@email.com.au">Curtin@email.com.au</a></p>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('nav').classList.toggle('active');}
+</script>
+
+</body>
+</html>
